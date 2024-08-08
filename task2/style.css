@@ -1,0 +1,466 @@
+*{
+    margin: 0;
+}
+header{
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    height: 149.8px;
+    z-index: 10;
+}
+.menu{
+    display: flex;
+    position: relative;
+    right: 50px;
+}
+.menu-item{
+    list-style: none;
+    padding-right: 40px;
+    cursor: pointer;
+}
+.name{
+    text-align: center;
+    padding-top: 50px;
+    cursor: pointer;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.commander{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    right: 100px;
+    border-bottom: 1px solid rgb(59, 58, 58);
+
+}
+.commander img{
+    position: relative;
+    right: 10px;
+}
+.search{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    right: 50px;
+    border-bottom: 1px solid rgb(59, 58, 58);
+    cursor: pointer;;
+}
+.panier{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(59, 58, 58);
+    cursor: pointer;
+}
+.panier img{
+    position: relative;
+    right: 10px;
+}
+#compteur{
+    position: relative;
+    left: 10px;
+    background-color: #ae8625;
+    border: 2px solid #ae8625;
+    border-radius: 100%;
+} 
+.sup{
+    display: flex;
+    width: 1000px;
+}
+.inf{
+    position: relative;
+    display: flex;
+    text-align: center;
+    right: 100px;
+}
+.inf h4{
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.intro img{
+    position: relative;
+    top: 40px;
+}
+.welcome{
+    text-align: center;
+    position: relative;
+    bottom: 450px;
+    z-index: 1;
+}
+.welcome h2{
+    font-size: 70px;
+    color: white;
+}
+.welcome h1{
+    font-size: 100px;
+    color: white;
+}
+.welcome h4{
+    font-size: 20px;
+    color: white;
+    font-weight:100;
+    font-family: 'Courier New', Courier, monospace;
+}
+.white-btn{
+    width: 200px;
+    height: 50px;
+    position: relative;
+    top: 30px;
+    font-weight: 900;
+    
+}
+.elements{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 80px;
+    margin-right: 80px;
+    position: relative;
+    bottom: 280px;
+}
+.elements button{
+    width: 200px;
+    height: 50px;
+    position: relative;
+    top: 30px;
+    font-weight: 900;
+    background-color: black;
+    color: white;
+}
+.colier{
+    padding: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.colier:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.bracelet{
+    padding: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.bracelet:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.bagues{
+    padding: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.bagues:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.elements h3{
+    padding-top: 10px;
+    font-size: 25px;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nouv{
+    text-align: center;
+    color: rgb(32, 77, 32);
+    position: relative;
+    bottom: 150px;
+    font-size: 30px;
+    text-decoration: underline;
+    margin: 0;
+}
+.nouv-coll{
+    display: flex;
+    position: relative;
+    top: -100px;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.nouv-item{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 470px;
+}
+
+.ajoutpanier{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 100px;
+    width: 350px;
+    position: relative;
+    top: 20px;
+    display: none;
+    cursor: pointer;
+}
+.btnlike{
+    display: flex;
+    justify-content: space-between;
+}
+.like{
+    color: black;
+    background-color: white;
+    border: white;
+    width: 50px;
+    height: 40px;
+
+}
+.nouv-item h3{
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.second{
+    z-index: 3;
+    position: relative;
+    display: none;
+}
+#ring:hover .second{
+    display: inline-block;
+}
+#ring:hover .first{
+    display: none;
+}
+#ring:hover button{
+    display: block;
+}
+
+#boucle:hover .second{
+    display: inline-block;
+}
+#boucle:hover .first{
+    display: none;
+}
+#boucle:hover button{
+    display: block;
+}
+
+#bracelet:hover .second{
+    display: inline-block;
+}
+#bracelet:hover .first{
+    display: none;
+}
+#bracelet:hover button{
+    display: block;
+}
+
+#colier:hover .second{
+    display: inline-block;
+}
+#colier:hover .first{
+    display: none;
+}
+#colier:hover button{
+    display: block;
+}
+.summer{
+    background-color: rgb(236, 218, 195);
+    display: flex;
+    height: 880px;
+}
+.caption{
+    padding-top: 200px;
+    padding-left: 50px;
+}
+.im1{
+    position: relative;
+    top: 2.5cm;
+    left: 150px;
+}
+.im2{
+    position: relative;
+    bottom: 150px;
+    
+    border: 15px solid white;
+}
+.summer button{
+    text-align: center;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    
+}
+.best-seller{
+    text-align: center;
+    color: rgb(85, 63, 36);
+    position: relative;
+    font-size: 20px;
+    text-decoration: underline;
+    margin: 0;
+}
+.best{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 40px;
+}
+.best-item{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 470px;
+}
+.best-item h3{
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.bsecond{
+    z-index: 3;
+    position: relative;
+    display: none;
+}
+#bring:hover .bsecond{
+    display: inline-block;
+}
+#bring:hover .bfirst{
+    display: none;
+}
+#bring:hover button{
+    display: block;
+}
+
+#bboucle:hover .bsecond{
+    display: inline-block;
+}
+#bboucle:hover .bfirst{
+    display: none;
+}
+#bboucle:hover button{
+    display: block;
+}
+
+#bbracelet:hover .bsecond{
+    display: inline-block;
+}
+#bbracelet:hover .bfirst{
+    display: none;
+}
+#bbracelet:hover button{
+    display: block;
+}
+
+#bcolier:hover .bsecond{
+    display: inline-block;
+}
+#bcolier:hover .bfirst{
+    display: none;
+}
+#bcolier:hover button{
+    display: block;
+}
+.livraison{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px dashed gray;
+}
+.liv{
+    display: flex;
+}
+.liv img{
+    position: relative;
+    right: 10px;
+}
+.liv h5{
+    font-weight: lighter;
+    color: gray;
+}
+.footer{
+    padding-top: 80px;
+    height: 300px;
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-around;
+}
+.footer h2{
+    color: #ae8625;
+    font-size: 30px;
+}
+.propos{
+    width: 500px;
+}
+.newsleter{
+    width: 500px;
+}
+.contct-icon{
+    width: 200px;
+    display: flex;
+    justify-content:space-between;
+    position: relative;
+    top:80px;
+}
+
+.menu-item a{
+    text-decoration: none;
+    color: white;
+}
+
+.prix{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    margin-bottom: 0px;
+}
+.totprix{
+    display: flex;
+}
+.totprix h4{
+    padding-right: 10px;
+}
+.info{
+    display: flex;
+    position: relative;
+    left: 160px;
+    list-style: none;
+    padding-right: 40px;
+}
+
+#totale{
+    position: relative;
+    left: 20px;
+}
+#dt{
+    position: relative;
+    left: 30px;
+}
+.btn-cont {
+    display: flex;
+  
+    justify-content: space-evenly;
+    width: 100px;
+    height: 40px;
+    background: transparent;
+    border: 0.2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 20px rgba(43, 42, 42, 0.5);
+    /* margin-top: 20px; */
+    border-radius: 40px;
+    /* margin-right: 20px; */
+    align-items: center;
+    /* transform: translate(70px, -50%); */
+  }
+  .btn-cont button {
+    outline: none;
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: transparent;
+    background: #dbdbdb;
+    color: black;
+    font-size: 15px;
+  }
